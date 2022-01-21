@@ -1,0 +1,11 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://minieyes.ipdisk.co.kr:3306/project_memo_board?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 176poweriy
