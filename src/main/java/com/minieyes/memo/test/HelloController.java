@@ -12,5 +12,10 @@ public class HelloController {
 	public String Hello() {
 		return "Hello World!";
 	}
+	
+	@GetMapping("/hellojsp")
+	public String hellojsp() {
+		return "hello";
+	}
 
 }

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+section {
+	min-height: 80vh;
+}
+
+.userInputDiv {
+	width: 18vw;
+}
+
+.userInputDiv > #signUpLink {
+	font-size: 12px;
+}
+
+.postCreateDiv {
+	width: 40vw;
+}
+
+#subjectTitle {
+	width: 110px;
+}
+
+footer {
+	position: sticky;
+	top: 100vh;	
+}
