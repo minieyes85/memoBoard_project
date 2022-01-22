@@ -5,6 +5,10 @@ html, body {
 	margin: 0;
 }
 
+header {
+	height: 10vh;
+}
+
 section {
 	min-height: 80vh;
 }
@@ -17,7 +21,7 @@ section {
 	font-size: 12px;
 }
 
-.postCreateDiv {
+.postDiv {
 	width: 40vw;
 }
 

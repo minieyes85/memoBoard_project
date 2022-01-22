@@ -22,9 +22,9 @@
 		<input type="email" class="form-control mb-3"
 			placeholder="Email address">
 
-		<button type="button" class="btn btn-primary btn-block mb-3">
-			Sign Up</button>
-		<div class="text-center" id="signUpLink">
+		<button type="button" class="btn btn-primary btn-block mb-3"
+			onclick="location.href='/post/list_view'">Sign Up</button>
+		<div class="text-center">
 			<span>Already do you have Id for memo?</span> <a href="/user/signin_view"
 				class="ml-3">Sign In</a>
 		</div>

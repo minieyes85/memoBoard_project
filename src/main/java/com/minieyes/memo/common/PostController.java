@@ -11,4 +11,14 @@ public class PostController {
 	public String postCreate() {
 		return "post/create";
 	}
+	
+	@RequestMapping("/list_view")
+	public String postList() {
+		return "post/list";
+	}
+	
+	@RequestMapping("/detail_view")
+	public String postDetail() {
+		return "post/detail";
+	}
 }

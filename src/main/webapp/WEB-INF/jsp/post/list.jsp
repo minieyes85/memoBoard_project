@@ -17,7 +17,7 @@
 
 	<jsp:include page="/WEB-INF/jsp/component/header_sign.jsp"></jsp:include>
 	
-	<jsp:include page="/WEB-INF/jsp/component/section_create.jsp"></jsp:include>
+	<jsp:include page="/WEB-INF/jsp/component/section_list.jsp"></jsp:include>
 	
 	<jsp:include page="/WEB-INF/jsp/component/footer.jsp"></jsp:include>
 
