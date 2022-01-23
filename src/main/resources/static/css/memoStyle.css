@@ -6,7 +6,7 @@ html, body {
 }
 
 header {
-	height: 10vh;
+	height: 8vh;
 }
 
 section {
@@ -31,5 +31,5 @@ section {
 
 footer {
 	position: sticky;
-	top: 100vh;	
+	top: 100vh;
 }
