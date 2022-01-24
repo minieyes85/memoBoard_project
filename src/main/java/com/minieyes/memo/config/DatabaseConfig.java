@@ -11,7 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages="com.minieyes.memo.*")  // interface°¡ ÀÖ´Â ÆĞÅ°Áö °æ·Î
+@MapperScan(basePackages="com.minieyes.memo.*")  // interface íŒŒì¼ package ê²½ë¡œ
 public class DatabaseConfig {
 	
 	@Bean

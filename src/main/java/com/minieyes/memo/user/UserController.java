@@ -1,4 +1,4 @@
-package com.minieyes.memo.common;
+package com.minieyes.memo.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

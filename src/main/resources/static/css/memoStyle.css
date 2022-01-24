@@ -14,7 +14,7 @@ section {
 }
 
 .userInputDiv {
-	width: 18vw;
+	width: 280px;
 }
 
 .userInputDiv > #signUpLink {
@@ -22,7 +22,7 @@ section {
 }
 
 .postDiv {
-	width: 40vw;
+	width: 620px;
 }
 
 #subjectTitle {
