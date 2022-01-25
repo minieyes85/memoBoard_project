@@ -54,15 +54,17 @@ public class UserRestController {
 		
 		HttpSession session = req.getSession();
 		
-		session.setAttribute("id", user.getId());
+		session.setAttribute("userId", user.getId());
+		session.setAttribute("userLoginId", user.getLoginId());
 		session.setAttribute("userName", user.getName());
 		
 		Map<String, String> result = new HashMap<>();
-		if(user.getName() != "") {
+		
+		if(user.getName() != null) {
 			result.put("result", "success");
 			result.put("userName", user.getName());
 		} else {
-			result.put("result", "fail");			
+			result.put("result", "fail");
 		}
 		
 		return result;

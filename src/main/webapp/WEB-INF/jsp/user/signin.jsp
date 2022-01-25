@@ -39,8 +39,10 @@
 <script>
 	$(document).ready(function(){
 		
-		$("#signinBtn").on("click",function(){
-
+		$("#signinBtn").on("click",function(e){
+			
+			e.preventDefault();
+			
 			var loginId = $("#loginId").val();
 			var password = $("#password").val();
 			
@@ -63,8 +65,10 @@
 				},
 				success:function(data){
 					if(data.result == "success"){
-						alert(data.userName);
+						alert(data.userName + "님 안녕하세요.");
 						location.href="/post/list_view";
+					} else {
+						alert("일치하는 회원이 없습니다.");
 					}
 				},
 				error:function(){

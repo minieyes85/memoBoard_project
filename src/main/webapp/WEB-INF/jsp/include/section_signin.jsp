@@ -4,15 +4,17 @@
 <section class="d-flex justify-content-center align-items-center">
 
 	<div class="userInputDiv">
-	
-		<input type="text" class="form-control mb-3" placeholder="ID"
+		
+		<form>
+			<input type="text" class="form-control mb-3" placeholder="ID"
 			autofocus id="loginId">
 		
 		<input type="password" class="form-control mb-3"
 			placeholder="Password" id="password">
 		
-		<button type="button" class="btn btn-primary btn-block mb-3"
+		<button type="submit" class="btn btn-primary btn-block mb-3"
 			id="signinBtn">Sign In</button>
+		</form>
 		
 		<div class="text-center" id="signUpLink">
 			<a href="/user/signup_view">Sign Up</a>
