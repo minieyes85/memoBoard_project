@@ -6,13 +6,13 @@
 	<div class="userInputDiv">
 	
 		<input type="text" class="form-control mb-3" placeholder="ID"
-			autofocus>
+			autofocus id="loginId">
 		
 		<input type="password" class="form-control mb-3"
-			placeholder="Password">
+			placeholder="Password" id="password">
 		
 		<button type="button" class="btn btn-primary btn-block mb-3"
-			onclick="location.href='/post/list_view'">Sign In</button>
+			id="signinBtn">Sign In</button>
 		
 		<div class="text-center" id="signUpLink">
 			<a href="/user/signup_view">Sign Up</a>

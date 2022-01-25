@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.minieyes.memo.common.EncryptUtils;
 import com.minieyes.memo.user.dao.UserDAO;
+import com.minieyes.memo.user.model.User;
 
 @Service
 public class UserBO {
@@ -18,6 +19,13 @@ public class UserBO {
 		String encodingPassword = EncryptUtils.md5(password);
 		
 		return userDAO.insertUser(loginId, encodingPassword, name, email);
+	}
+	
+	public User getUser(String loginId, String password) {
+		
+		String encodingPassword = EncryptUtils.md5(password);
+		
+		return userDAO.selectUser(loginId, encodingPassword);
 	}
 
 }

@@ -21,6 +21,10 @@ section {
 	font-size: 12px;
 }
 
+.userInputDiv > #signUpBelow {
+	font-size: 12px;
+}
+
 .postDiv {
 	width: 620px;
 }

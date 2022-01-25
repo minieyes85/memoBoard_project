@@ -24,8 +24,8 @@
 
 		<button type="button" class="btn btn-primary btn-block mb-3"
 			id="joinBtn">Sign Up</button>
-		<div class="text-center">
-			<span>Already do you have Id for memo?</span> <a href="/user/signin_view"
+		<div class="text-center" id="signUpBelow">
+			<span>Already have you joined on Memo Board?</span> <a href="/user/signin_view"
 				class="ml-3">Sign In</a>
 		</div>
 	</div>
