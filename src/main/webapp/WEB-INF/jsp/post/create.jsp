@@ -24,4 +24,15 @@
 	<c:import url="/WEB-INF/jsp/include/footer.jsp"/>
 
 </body>
+
+<script>
+$(document).ready(function(){
+	$("#fileUploadLink").on("change", function(e){
+		var name = e.target.files[0].name;
+		$("#fileUploadName").text(name);
+	});
+});
+
+</script>
+
 </html>

@@ -13,8 +13,7 @@
 			<textarea class="form-control" rows="11" placeholder="What's your important things?"></textarea>
 		</div>
 		<div class="mb-3">
-			<button class="btn btn-sm btn-primary">attach file</button>
-			<span class="ml-3">attached_samplefile.jpg</span>
+			<input type="file" id="fileUploadLink"/>
 		</div>
 		<div class="d-flex justify-content-between">
 			<button class="btn btn-secondary btn-lg"
