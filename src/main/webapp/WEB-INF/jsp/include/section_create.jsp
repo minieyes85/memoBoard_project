@@ -7,10 +7,11 @@
 		<div class="text-center h3 mb-3">Write a Memo</div>
 		<div class="d-flex align-items-center mb-3">
 			<span class="h5 text-center" id="subjectTitle">Subject :</span>
-			<input type="text" placeholder="Subject" class="form-control">
+			<input type="text" placeholder="Subject" class="form-control" id="titleInput">
 		</div>
 		<div class="mb-3">
-			<textarea class="form-control" rows="11" placeholder="What's your important things?"></textarea>
+			<textarea class="form-control" rows="11" placeholder="What's your important things?"
+				id="contentInput"></textarea>
 		</div>
 		<div class="mb-3">
 			<input type="file" id="fileUploadLink"/>
@@ -19,7 +20,7 @@
 			<button class="btn btn-secondary btn-lg"
 				onclick="location.href='/post/list_view'">to List</button>
 			<button class="btn btn-primary btn-lg"
-				onclick="location.href='/post/list_view'">Save</button>
+				id="saveBtn">Save</button>
 		</div>
 		
 	</div>

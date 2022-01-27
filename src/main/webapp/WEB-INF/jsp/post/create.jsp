@@ -38,9 +38,42 @@
 
 <script>
 $(document).ready(function(){
-	$("#fileUploadLink").on("change", function(e){
-		var name = e.target.files[0].name;
-		$("#fileUploadName").text(name);
+	
+	$("#saveBtn")on("click",function(){
+		let title = $("#titleInput").val();
+		//trim 무의미한 공백 제거
+		let content = $("#contentInput").val().trim();
+		
+		if(title == "") {
+			alert("제목을 입력하세요.");
+			return;
+		}
+		
+		if(content == "") {
+			alert("내용을 입력하세요.");
+			return;
+		}
+		
+		$.ajax({
+			type:"post",
+			url:"/post/create",
+			data:{
+				"subject":title,
+				"content":content
+			},
+			success:function(data) {
+				if(data.result == "success"){
+					alert("메모가 성공적으로 등록 되었습니다.");
+					location.href="/post/list_view";
+				} else {
+					alert("글쓰기 실패");
+				}
+			},
+			error:function() {
+				alert("error");
+			}
+		});
+		
 	});
 });
 
