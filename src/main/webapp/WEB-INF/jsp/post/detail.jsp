@@ -35,4 +35,34 @@
 	<c:import url="/WEB-INF/jsp/include/footer.jsp"/>
 
 </body>
+
+<script>
+	$(document).ready(function(){
+		$("#delBtn").on("click",function(){
+			let postId = $(this).val();
+			
+			$.ajax({
+				type: "get",
+				url: "/post/delete",
+				data: {
+					"postId":postId
+				},
+				success: function(data){
+					if(data.result == "success"){
+						alert("삭제 성공");
+						location.href="/post/list_view";
+					} else {
+						alert("삭제 실패");
+					}
+				},
+				error: function() {
+					alert("error");
+				}
+			});
+		});
+	});
+
+
+</script>
+
 </html>

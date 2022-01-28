@@ -7,10 +7,10 @@
 		<div class="text-center h3 mb-3">Modify Memo</div>
 		<div class="d-flex align-items-center mb-3">
 			<span class="h5 text-center" id="subjectTitle">Subject :</span>
-			<input type="text" value="중요한 메모" class="form-control">
+			<input type="text" value="${post.subject }" class="form-control">
 		</div>
 		<div class="mb-3">
-			<textarea class="form-control" rows="11">Actually it's not an important memo...</textarea>
+			<textarea class="form-control" rows="11">${post.content }</textarea>
 		</div>
 		<div class="mb-3">
 			<button class="btn btn-sm btn-primary">attach file</button>
@@ -21,7 +21,7 @@
 				<button class="btn btn-secondary btn-lg mr-3"
 					onclick="location.href='/post/list_view'">to List</button>
 				<button class="btn btn-danger btn-lg"
-					onclick="location.href='#'">Delete</button>	
+					id="delBtn" value="${post.id}">Delete</button>	
 			</div>
 			<div>
 				<button class="btn btn-primary btn-lg"

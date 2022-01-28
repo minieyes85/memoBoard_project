@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <section class="d-flex justify-content-center align-items-center">
 
@@ -16,28 +18,19 @@
 				</thead>
 				
 				<tbody>
-					<tr>
-						<td>4</td>
-						<td>
-							<a class="text-reset text-decoration-none" href="/post/detail_view">중요한 메모</a>
-						</td>
-						<td>시간</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>적당한 메모</td>
-						<td>시간</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>그럭저럭</td>
-						<td>시간</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>오늘하루</td>
-						<td>시간</td>
-					</tr>
+					<c:forEach var="post" items="${postList}" varStatus="status">
+						<tr>
+							<td>${status.count}</td>
+							<td>
+								<a class="text-reset text-decoration-none" href="/post/detail_view?postId=${post.id}">
+									${post.subject}
+								</a>
+							</td>
+							<td>
+								<fmt:formatDate value="${post.createdAt}" pattern="yyyy-MM-dd"/>
+							</td>
+						</tr>
+					</c:forEach>
 				</tbody>
 			</table>
 		</div>

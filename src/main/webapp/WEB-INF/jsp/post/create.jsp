@@ -39,7 +39,7 @@
 <script>
 $(document).ready(function(){
 	
-	$("#saveBtn")on("click",function(){
+	$("#saveBtn").on("click",function(){
 		let title = $("#titleInput").val();
 		//trim 무의미한 공백 제거
 		let content = $("#contentInput").val().trim();
@@ -54,13 +54,23 @@ $(document).ready(function(){
 			return;
 		}
 		
+		var formData = new FormData();
+		formData.append("subject", title);
+		formData.append("content", content);
+		formData.append("file",$("#fileInput")[0].files[0]);
+		
+		
+		
 		$.ajax({
 			type:"post",
 			url:"/post/create",
-			data:{
-				"subject":title,
-				"content":content
-			},
+			data:formData,
+			
+			//파일 업로드 필수 설정
+			enctype:"multipart/form-data",
+			processData:false,
+			contentType:false,
+			
 			success:function(data) {
 				if(data.result == "success"){
 					alert("메모가 성공적으로 등록 되었습니다.");

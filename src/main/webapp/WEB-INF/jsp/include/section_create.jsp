@@ -14,7 +14,7 @@
 				id="contentInput"></textarea>
 		</div>
 		<div class="mb-3">
-			<input type="file" id="fileUploadLink"/>
+			<input type="file" id="fileInput"/>
 		</div>
 		<div class="d-flex justify-content-between">
 			<button class="btn btn-secondary btn-lg"
