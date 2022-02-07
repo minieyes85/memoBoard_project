@@ -25,7 +25,7 @@ public class PostRestController {
 	public Map<String, String> createMemo(
 			@RequestParam("subject") String subejct,
 			@RequestParam("content") String content,
-			@RequestParam("file") MultipartFile file,
+			@RequestParam(value="file", required = false) MultipartFile file,
 			HttpServletRequest req
 			) {
 		
